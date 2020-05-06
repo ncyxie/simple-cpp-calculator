@@ -7,29 +7,24 @@ using namespace std;
 
 int main()
 {
-
-int a, b;
-double s;
-double f;
-double c;
-double d;
-double g;
+float num1, num2; 
+float s, c, d, f, g;
  cout << "Simple C++ Calculator // ";
  cout << "Type a number, and then press Enter >> ";
- cin >> a;
+ cin >> num1;
  cout << "Simple C++ Calculator // ";
  cout << "Type another number, and then press Enter >> ";
-cin >> b;
- s = a + b;
- c = a * b;
- d = a / b;
- f = a - b;
- g = a % b;
- cout << a << " + " << b << " = " << s << endl;
- cout << a << " - " << b << " = " << f << endl;
-cout << a << " * " << b << " = " << c << endl;
-cout << a << " / " << b << " = " << d << endl;
-cout << a << " % " << b << " = " << g << endl;
+cin >> num2;
+ s = num1 + num2;
+ c = num1 * num2;
+ d = num1 / num2;
+ f = num1 - num2;
+ g = fmod(num1, num2);
+cout << num1 << " + " << num2 << " = " << s << endl;
+cout << num1 << " - " << num2 << " = " << f << endl;
+cout << num1 << " * " << num2 << " = " << c << endl;
+cout << num1 << " / " << num2 << " = " << d << endl;
+cout << num1 << " % " << num2 << " = " << g << endl;
 
 
 return 0;
